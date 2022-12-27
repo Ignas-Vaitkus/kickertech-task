@@ -4,10 +4,29 @@
 }
 
 .Navbar ul {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: none;
+}
+
+.Navbar .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #c4c4c4;
+}
+
+@media only screen and (min-width: 641px) {
+  .Navbar .hamburger-lines,
+  .checkbox {
+    display: none;
+  }
+
+  .Navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,10 +1,34 @@
 .Navbar {
   background-color: #2d2d2d;
-  padding: 10px 0;
+  height: 60px;
+}
+
+.Navbar nav {
+  height: 100%;
 }
 
 .Navbar ul {
   display: none;
+}
+
+.Navbar .checkbox {
+  display: block;
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Navbar .hamburger-lines {
+  display: block;
+  height: 32px;
+  width: 32px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Navbar .hamburger-lines .line {
@@ -22,10 +46,13 @@
   }
 
   .Navbar ul {
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 25px;
     list-style-type: none;
+    font-size: 20px;
     margin: 0;
     padding: 0;
   }

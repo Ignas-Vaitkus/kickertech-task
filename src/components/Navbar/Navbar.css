@@ -1,0 +1,13 @@
+.Navbar {
+  background-color: #2d2d2d;
+  padding: 10px 0;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

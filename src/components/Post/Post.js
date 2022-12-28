@@ -2,10 +2,24 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./Post.css";
 
-const Post = () => {
+const Post = ({ title, author, about }) => {
   const [comments, setComments] = useState();
 
-  return <div className="Post">Post Component</div>;
+  return (
+    <section className="Post">
+      <div class="post-container">
+        <div className="photo-container"></div>
+        <div className="text-container">
+          <h4>{title}</h4>
+          <h6>{author}</h6>
+          <p>{about}</p>
+        </div>
+      </div>
+      <div className="comment-container">
+        <input></input>
+      </div>
+    </section>
+  );
 };
 
 Post.propTypes = {

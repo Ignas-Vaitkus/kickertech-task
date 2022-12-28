@@ -4,3 +4,8 @@
   color: #ffffff;
   background-color: #dadada;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+}

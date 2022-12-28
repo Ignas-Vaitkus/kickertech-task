@@ -132,5 +132,7 @@
   .Navbar ul li {
     width: auto;
     height: auto;
+    line-height: normal;
+    border: 0;
   }
 }

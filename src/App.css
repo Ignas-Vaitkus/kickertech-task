@@ -1,8 +1,6 @@
 .App {
-  min-height: 100vh;
   text-align: center;
   color: #ffffff;
-  background-color: #dadada;
 }
 
 header {
@@ -13,10 +11,13 @@ header {
 main {
   position: absolute;
   top: 60px;
+  z-index: -1;
+
   width: 100%;
   box-sizing: border-box;
 
   padding: 65px 70px;
+  background-color: #dadada;
 
   display: flex;
   flex-direction: column;

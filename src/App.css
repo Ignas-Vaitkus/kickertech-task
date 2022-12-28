@@ -14,4 +14,11 @@ main {
   position: absolute;
   top: 60px;
   width: 100%;
+  box-sizing: border-box;
+
+  padding: 65px 70px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }

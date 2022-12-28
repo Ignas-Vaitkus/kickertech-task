@@ -1,11 +1,12 @@
 .Post {
   background-color: #323232bf;
   border-radius: 10px;
+  overflow: hidden;
   max-width: 500px;
 }
 
 .post-container {
-  margin: 35px 30px;
+  margin: 35px 30px 0;
   display: flex;
   flex-direction: column;
 }
@@ -36,5 +37,48 @@
 .text-container p {
   font-size: 12px;
   color: #ffffffbf;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.comment-container {
+  background-color: #353535;
+  padding: 10px 30px;
+}
+
+.comment-container .input-container {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.comment-container .input-container input {
+  background-color: #444444;
+  padding: 0 0 0 20px;
+  border: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.comment-container .input-container input:focus {
+  outline: none;
+}
+
+.comment-container .input-container button {
+  border: 0;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #4444447f;
+}
+
+::placeholder {
+  color: #ffffff;
+  font-size: 14px;
   font-weight: bold;
 }

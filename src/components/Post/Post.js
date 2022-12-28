@@ -16,7 +16,14 @@ const Post = ({ title, author, about }) => {
         </div>
       </div>
       <div className="comment-container">
-        <input></input>
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          method="POST"
+          class="input-container"
+        >
+          <input placeholder="Placeholder..." />
+          <button type="submit">SUBMIT</button>
+        </form>
       </div>
     </section>
   );

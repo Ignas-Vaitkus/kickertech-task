@@ -119,9 +119,15 @@
 
   .Post .post-container {
     width: 500px;
+    margin: 30px;
+
     flex-shrink: 0.5;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
   }
 
-  .Post .comment-container {
+  .Post .post-container .text-container {
+    padding: 0 0 30px;
   }
 }

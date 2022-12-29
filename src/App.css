@@ -23,3 +23,10 @@ main {
   align-items: center;
   gap: 60px;
 }
+
+@media only screen and (min-width: 1201px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -3,6 +3,9 @@
   border-radius: 10px;
   overflow: hidden;
   max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .post-container {
@@ -101,8 +104,24 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 640px), (min-width: 1201px) {
+@media only screen and (max-width: 640px), (min-width: 1201px) {
   .comment-container {
     max-height: 275px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1200px) {
+  .Post {
+    flex-direction: row;
+    max-width: none;
+    max-height: 550px;
+  }
+
+  .Post .post-container {
+    width: 500px;
+    flex-shrink: 0.5;
+  }
+
+  .Post .comment-container {
   }
 }

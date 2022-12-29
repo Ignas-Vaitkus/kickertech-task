@@ -1,1 +1,30 @@
-.Comment {}
+.Comment {
+  border-bottom: 1px solid #ffffff3f;
+
+  display: flex;
+  padding: 10px 5%;
+}
+
+.Comment .comment-user-picture-container {
+  background-color: #444444;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.Comment .comment-content {
+  text-align: start;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.Comment .comment-content .comment-username {
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.Comment .comment-content .comment-text {
+  font-size: 12px;
+}

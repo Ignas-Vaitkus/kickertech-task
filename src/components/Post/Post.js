@@ -1,9 +1,46 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
+import Comment from "../Comment/Comment";
 import "./Post.css";
 
 const Post = ({ title, author, about }) => {
-  const [comments, setComments] = useState();
+  const comments = [
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+    {
+      username: "Lorem ipsum",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    },
+  ];
 
   return (
     <section className="Post">
@@ -24,6 +61,9 @@ const Post = ({ title, author, about }) => {
           <input placeholder="Placeholder..." />
           <button type="submit">SUBMIT</button>
         </form>
+        {comments.map((comment) => (
+          <Comment {...comment} />
+        ))}
       </div>
     </section>
   );

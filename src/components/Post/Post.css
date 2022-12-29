@@ -42,15 +42,30 @@
 }
 
 .comment-container {
+  box-sizing: border-box;
   background-color: #353535;
-  padding: 10px 30px;
+  padding-top: 10px;
+
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .comment-container .input-container {
-  width: 100%;
+  width: 90%;
   height: 40px;
+  margin: 0 5%;
+  background-color: #353535;
+
+  margin-bottom: 20px;
   border-radius: 20px;
   overflow: hidden;
+
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+
+  z-index: 0;
 
   display: flex;
 }
@@ -84,4 +99,10 @@
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 640px), (min-width: 1201px) {
+  .comment-container {
+    max-height: 275px;
+  }
 }
